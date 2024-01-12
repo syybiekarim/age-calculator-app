@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  margin: 30% 1rem 70% 1rem;
+  background-color: hsl(0, 0%, 94%);
+}
+
+#container {
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem 1.2rem;
+  border-radius: 25px 25px 100px 25px;
+}
+
+#sub-container {
+  /* border-bottom: 1px solid hsl(0, 0%, 86%); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 50%; */
+  /* padding-bottom: 4rem; */
+  /* margin-bottom: 4rem; */
+}
+
+#submit-block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+
+button {
+  display: flex;
+  border: none;
+}
+
+img {
+  background-color: hsl(259, 100%, 65%);
+  padding: 1rem;
+  border-radius: 100px;
+  /* position: absolute; */
+  /* top: 290px;
+  left: 172px; */
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.input-cont {
+  display: flex;
+  flex-direction: column;
+  margin: 0.6rem;
+}
+
+input {
+  width: 6.2rem;
+  height: 3.9rem;
+  border-radius: 9px;
+  border: 1px solid grey;
+  padding: 1.2rem;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+label {
+    color: hsl(0, 1%, 44%);
+    letter-spacing: 3px;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+small {
+  color: red;
+  margin-top: 0.5rem;
+}
+
+p {
+  font-size: 3rem;
+  margin: 1rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+#second-cont span {
+  color: hsl(259, 100%, 65%);
+}
+
+/* for @media label {
+    font-size: 32px;
+} */
+@media screen and (max-width: 600px) {
+  button {
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 40rem) {
+  body {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem;
+  }
+  form {
+    margin-bottom: 0;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+input {
+  justify-content: end;
+  width: 85%;
+}
+
+input:hover {
+  cursor: pointer;
+  border-color: hsl(259, 100%, 65%);
+}
+
+  #container {
+    width: 680px;
+    height: 480px;
+    padding: 2rem 3rem 3rem 3rem;
+  }
+
+  #submit-block {
+    justify-content: space-between;
+  }
+  
+  #sub-container {
+    margin: 0;
+    /* padding-bottom: 1rem; */
+    /* margin-bottom: 2rem; */
+  }
+  img {
+    top: 220px;
+    right: 390px;
+    cursor: pointer;
+  }
+
+  img:hover {
+    background-color: black;
+  }
+
+  p {
+    font-size: 5rem;
+    margin: 0;
+    line-height: 80px;
+  }
+}
